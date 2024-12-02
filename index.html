@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio -layth issa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        
+        body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        line-height: 1.6;
+        background-position: right top;
+        
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .wrapper { display: flex; }
+
+    
+        nav {
+            position: fixed; left: 0; top: 0;
+            width: 250px;
+            height: 100%;
+            background-color: blue;
+            color: #fff;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 100;
+        }
+        nav ul { list-style: none; padding: 0; }
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover, nav a.active { background-color: #fff; color: #a0522d; }
+        .profile-image-nav {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+       
+        main {
+            flex: 1;
+            margin-left: 250px;
+            padding: 40px;
+        }
+        header, section {
+            margin-bottom: 40px;
+        }
+        header, section.active {
+            display: block;
+        }
+        section { display: none; }
+
+
+        header h1 {
+            font-size: 2.5em;
+            color: blue;
+            margin-bottom: 10px;
+        }
+        header h1 span {
+            font-weight: bold;
+            color: #333;
+        }
+        header .contact-info, section p {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        header .description {
+            color: #666;
+            margin-top: 10px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 1.2em;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: blue;
+        }
+        section h2 {
+            font-size: 1.5em;
+            color: blue;
+            margin-bottom: 20px;
+        }
+        .award-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .award-item i {
+            color: black;
+            margin-right: 10px;
+        }
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        #contact label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        #contact button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <nav>
+            <img src="l.jpg" alt="Profile Picture" class="profile-image-nav">
+            <ul>
+                <li><a href="#" data-section="about" class="nav-link active">About</a></li>
+                <li><a href="#" data-section="experience" class="nav-link">Experience</a></li>
+                <li><a href="#" data-section="education" class="nav-link">Education</a></li>
+                <li><a href="#" data-section="skills" class="nav-link">Skills</a></li>
+                <li><a href="#" data-section="interests" class="nav-link">Interests</a></li>
+                <li><a href="#" data-section="awards" class="nav-link">Awards</a></li>
+                <li><a href="#" data-section="contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+        <main>
+            <header id="about">
+                <h1>Layth issa <span>Web Developer</span></h1>
+                <p class="contact-info">bader street | (+972) 598096261 | loly.issa2015@gmail.com</p>
+                <p class="description">I am experienced in leveraging agile frameworks to provide a robust synopsis for high-level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </header>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>Senior Web Developer</h3>
+                    <p>Intelitec Solutions | March 2013 - Present</p>
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Web Developer</h3>
+                    <p>Intelitec Solutions | December 2020 - March 2024</p>
+                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bethlehem University</h3>
+                    <p>Master of Software Engineering | August 2022 - May 2024</p>
+                    <p>Computer Science - Web Development Track | GPA: 3.23</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skill-list">
+                  <p>Programming Languages & Tools:</p>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-sass"></i>
+                    <i class="fab fa-less"></i>
+                    <i class="fab fa-bootstrap"></i>
+                    <i class="fab fa-wordpress"></i>
+                    
+                </div>
+                <div class="skill-list">
+                    <p>Workflow:</p>
+                    <ul>
+                        <li>Mobile-First, Responsive Design</li>
+                        <li>Cross Browser Testing & Debugging</li>
+                        <li>Cross Functional Teams</li>
+                        <li>Agile Development & Scrum</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="interests">
+                <h2>Interests</h2>
+                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Palestine, I enjoy mountain hiking, free climbing, and kayaking.</p>
+                <p>When I'm forced indoors, I follow a number of Sci-fi and fantasy genre movies and television shows. I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+            </section>
+
+            <section id="awards">
+                <h2>Awards & Certifications</h2>
+                <div class="awards-list">
+                    <div class="award-item"><i class="fas fa-award"></i> Google Analytics Certified Developer</div>
+                    <div class="award-item"><i class="fas fa-award"></i> Mobile Web Specialist - Google Certification</div>
+                    <div class="award-item"><i class="fas fa-award"></i> 1<sup>st</sup> Place - University of Bethlehem - Emerging Tech Competition 2009</div>
+                    <div class="award-item"><i class="fas fa-award"></i> 1<sup>st</sup> Place - University of Bethlehem - Adobe Creative Photoshop 2008</div>
+                    <div class="award-item"><i class="fas fa-award"></i> 2<sup>nd</sup> Place - University of Bethlehem - Emerging Tech Competition 2008</div>
+                    <div class="award-item"><i class="fas fa-award"></i> 3<sup>rd</sup> Place - Bethlehem University - Hackathon 2005</div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section, header');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const sectionId = link.dataset.section;
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                sections.forEach(section => section.classList.remove('active'));
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
